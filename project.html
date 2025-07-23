@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-3 navbar-light bg-primary-darker">
+        <div class="container"> 
+            <a href="#" class="logo">
+                <img src="./assets/logo.png" alt="Balatero logo" />
+            </a>
+            <button aria-controls="myNavbar2" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#myNavbar2" data-bs-toggle="collapse" type="button"> 
+                <span class="navbar-toggler-icon"></span> 
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar2">
+                <ul class="navbar-nav ms-auto" id="menu-menu-1">
+                    <li class="nav-item"> <a class="nav-link" href="index.html#home">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html#about">About</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html#market">Skills</a> </li>   
+                    <li class="nav-item"> <a class="nav-link" href="index.html#cases">Projects</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html#blog">Education</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html#contact">Contact Me</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Back Arrow Button -->
+    <div class="back-button-container">
+        <a href="index.html#cases" class="btn btn-back">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+    </div>
+
+    <!-- Project Details Section -->
+    <section class="project-details py-5">
+        <div class="container">
+            <h1 class="text-center mb-4" style="font-weight: 600;">Project <span style="color: #E69DB8;" class="font-weight-bold">Details</span></h1>
+            <div class="project-content d-flex align-items-center justify-content-between" id="project-content">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const projectTitle = decodeURIComponent(urlParams.get('project'));
+            const projects = {
+                'Welcome to Cozone': {
+                    title: 'CoZone',
+                    image: './assets/cozone-pic.png',
+                    date: 'Jan 2024 - May 2025',
+                    tools: ['Laravel PHP', 'Google Maps API'],
+                    description: 'Cozone is a Reservation System for coworking spaces where clients can search for specific coworking spaces around Manila. On the other hand, the owners can also make their listing and manage their spaces. This is made by 5 members where it won a 1st Place Outstanding Award (best in Thesis) in Computer Studies TUP - Manila 2025.',
+                    features: ['Analytics and Insights'],
+                    links: {
+                        'Github Link': 'https://github.com/example/cozone'
+                    }
+                },
+                'IT Mobile Prototype': {
+                    title: 'EDU: BRIGHT',
+                    image: './assets/EduBright.png',
+                    date: 'Mar 2024 - Jun 2025',
+                    tools: ['React Native', 'Firebase'],
+                    description: 'EDU: BRIGHT is a school management system designed to streamline administrative tasks and enhance student-teacher interaction. It includes features for attendance tracking and grade management.',
+                    features: ['Attendance Tracking', 'Grade Management'],
+                    links: {
+                        'Github Link': 'https://github.com/example/edubright'
+                    }
+                },
+                'EDU BRIGHT': {
+                    title: 'STB Verse',
+                    image: './cozone-pic.png',
+                    date: 'Apr 2024 - Jul 2025',
+                    tools: ['HTML', 'CSS', 'JavaScript'],
+                    description: 'STB Verse is a website dedicated to our passion for KPOP, offering fan content, event updates, and community features for enthusiasts.',
+                    features: ['Fan Content', 'Event Updates'],
+                    links: {
+                        'Github Link': 'https://github.com/example/stbverse'
+                    }
+                },
+                'Welcome to Cozone 2': {
+                    title: 'Confianza & Vogue',
+                    image: './assets/confianza-img.png',
+                    date: 'Feb 2024 - Aug 2025',
+                    tools: ['WordPress', 'Adobe XD'],
+                    description: 'Confianza & Vogue is a website that personalizes outfit choices with a stylish and intuitive interface, tailored for fashion enthusiasts.',
+                    features: ['Outfit Recommendations'],
+                    links: {
+                        'Github Link': 'https://github.com/example/confianza'
+                    }
+                },
+                'IT Mobile Prototype 2': {
+                    title: 'HR Information System',
+                    image: './cozone-pic.png',
+                    date: 'May 2024 - Sep 2025',
+                    tools: ['Flutter', 'MySQL'],
+                    description: 'A mobile application for employees in a company, enhancing HR management with payroll and leave tracking features.',
+                    features: ['Payroll Tracking', 'Leave Management'],
+                    links: {
+                        'Github Link': 'https://github.com/example/hrsystem'
+                    }
+                },
+                'EDU BRIGHT 2': {
+                    title: 'TODO: MOA',
+                    image: './cozone-pic.png',
+                    date: 'Jun 2024 - Oct 2025',
+                    tools: ['Swift', 'Core Data'],
+                    description: 'TODO: MOA is a mobile application prototype for task management and productivity, designed for personal organization.',
+                    features: ['Task Scheduling', 'Reminders'],
+                    links: {
+                        'Github Link': 'https://github.com/example/todomoa'
+                    }
+                }
+                // Add more projects (e.g., To Dew, ERS, Habiti, etc.) as needed
+            };
+
+            const project = projects[projectTitle];
+            if (project) {
+                const contentDiv = document.getElementById('project-content');
+                let html = `
+                    <div class="text-content">
+                        <h1 style="color: #E69DB8; font-size: 3em;">${project.title}</h1>
+                        <p><strong>Date:</strong> ${project.date}</p>
+                        <p><strong>Tools:</strong></p>
+                        <ul style="list-style-type: disc; text-align: left;">
+                            ${project.tools.map(tool => `<li>${tool}</li>`).join('')}
+                        </ul>
+                        <p><strong>Description:</strong></p>
+                        <p>${project.description}</p>
+                        <p><strong>Features:</strong></p>
+                        <ul style="list-style-type: disc; text-align: left;">
+                            ${project.features.map(feature => `<li>${feature}</li>`).join('')}
+                        </ul>
+                        <div class="links mt-4">
+                            ${Object.entries(project.links).map(([label, url]) => `
+                                <a href="${url}" class="btn btn-secondary" target="_blank">${label}</a>
+                            `).join('')}
+                        </div>
+                    </div>
+                    <div id="starryCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="${project.image}" class="d-block w-100" alt="${project.title} Slide 1">
+                            </div>
+                            <!-- Add more carousel items if needed (e.g., additional images) -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#starryCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#starryCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                `;
+                contentDiv.innerHTML = html;
+            } else {
+                document.getElementById('project-content').innerHTML = '<p class="card-text">Project not found.</p>';
+            }
+        });
+    </script>
+</body>
+</html>
