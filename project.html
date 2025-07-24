@@ -57,78 +57,221 @@
             const urlParams = new URLSearchParams(window.location.search);
             const projectTitle = decodeURIComponent(urlParams.get('project'));
             const projects = {
-                'Welcome to Cozone': {
+                'Cozone': {
                     title: 'CoZone',
-                    image: './assets/cozone-pic.png',
+                    images: [
+                        './assets/cozone-pic.png',
+                        './assets/cozone2.png',
+                        './assets/cozone3.png',
+                        './assets/cozone4.png',
+                        './assets/cozone5.png',
+                        './assets/cozone6.png',
+                        './assets/cozone7.png'
+                    ],
                     date: 'Jan 2024 - May 2025',
-                    tools: ['Laravel PHP', 'Google Maps API'],
-                    description: 'Cozone is a Reservation System for coworking spaces where clients can search for specific coworking spaces around Manila. On the other hand, the owners can also make their listing and manage their spaces. This is made by 5 members where it won a 1st Place Outstanding Award (best in Thesis) in Computer Studies TUP - Manila 2025.',
-                    features: ['Analytics and Insights'],
+                    tools: ['Frontend: HTML, CSS, JavaScript', 'Backend: Laravel PHP Framework', 'Database: MySQL', 'APIs: Paymongo (payments), Google Maps (location)', 'Design: Adobe XD ', 'Version Control: Git, GitHub '],
+                    description: 'CoZone is a web-based reservation system, developed by a team of five, that simplifies booking coworking spaces for students, freelancers, and professionals. With remote work booming globally by 2024, outdated manual booking systems cause overcrowding and lack of real-time availability. CoZone solves this by offering an easy platform to find, book, and manage spaces. It won 1st Place – BSIS Best in Capstone Thesis and the Outstanding Research Award at the Computer Studies Department.',
+                    features: ['Clients: Location-based search (Google Maps), real-time availability, secure payments (Paymongo), booking management.', 'Lessors: Create/edit listings, track bookings, view revenue stats.', 'Admins: Manage users, system analytics.'],
                     links: {
-                        'Github Link': 'https://github.com/example/cozone'
+                        'Github Link': 'https://github.com/eloissa20/cozoneweb'
                     }
                 },
-                'IT Mobile Prototype': {
+                'Edubright': {
                     title: 'EDU: BRIGHT',
-                    image: './assets/EduBright.png',
-                    date: 'Mar 2024 - Jun 2025',
-                    tools: ['React Native', 'Firebase'],
-                    description: 'EDU: BRIGHT is a school management system designed to streamline administrative tasks and enhance student-teacher interaction. It includes features for attendance tracking and grade management.',
+                    images: [
+                        './assets/EduBright.png'
+                    ],
+                    date: 'June 2024',
+                    tools: ['MERN Stack (MongoDB, Express.js, React, Node.js)'],
+                    description: 'EDU: BRIGHT is a school management system, developed by a team of five, designed to streamline administrative tasks and enhance student-teacher interaction. It includes features for attendance tracking and grade management.',
                     features: ['Attendance Tracking', 'Grade Management'],
                     links: {
-                        'Github Link': 'https://github.com/example/edubright'
+                        'Github Link': 'https://github.com/acpr-2023/school'
                     }
                 },
                 'EDU BRIGHT': {
-                    title: 'STB Verse',
-                    image: './cozone-pic.png',
-                    date: 'Apr 2024 - Jul 2025',
-                    tools: ['HTML', 'CSS', 'JavaScript'],
-                    description: 'STB Verse is a website dedicated to our passion for KPOP, offering fan content, event updates, and community features for enthusiasts.',
-                    features: ['Fan Content', 'Event Updates'],
+                    title: 'Stbverse',
+                    images: [
+                        './assets/stbverse-img.png',
+                        './assets/stbverse1.png', 
+                        './assets/stbverse2.png',
+                        './assets/stbverse3.png',
+                        './assets/stbverse4.png',
+                        './assets/stbverse5.png',
+                        './assets/stbverse6.png',
+                        './assets/stbverse7.png',     
+                    ],
+                    date: '2023',
+                    tools: ['HTML', 'CSS'],
+                    description: 'STB Verse is a website, developed by a team of 3, dedicated to our passion for KPOP, offering their latest content, event updates, and community features for enthusiasts, specifically KPOP group of SEVENTEEN, Tomorrow By Together, and Blackpink.',
+                    features: ['Latest Content', 'Event Updates', 'Group and Members Profile', 'Discography', 'Gallery', 'Shop'],
                     links: {
-                        'Github Link': 'https://github.com/example/stbverse'
+                        'Github Link': 'https://github.com/jayannbal/Andal_Balatero_Caguiat-InterestWebsite-KPOP'
                     }
                 },
-                'Welcome to Cozone 2': {
+                'Confianza': {
                     title: 'Confianza & Vogue',
-                    image: './assets/confianza-img.png',
-                    date: 'Feb 2024 - Aug 2025',
-                    tools: ['WordPress', 'Adobe XD'],
-                    description: 'Confianza & Vogue is a website that personalizes outfit choices with a stylish and intuitive interface, tailored for fashion enthusiasts.',
-                    features: ['Outfit Recommendations'],
+                    images: [
+                        './assets/confianza1.png',
+                        './assets/confianza2.png',
+                        './assets/confianza3.png',
+                        './assets/confianza4.png',
+                        './assets/confianza5.png',
+                        './assets/confianza6.png',
+                    ],
+                    date: '2024',
+                    tools: ['HTML', 'CSS'],
+                    description: 'Confianza & Vogue is a fashion visual discovery website, developed by a team of 5, that offers a visual guide to creating stylish and confident outfits. Designed for teens aged 12–18, it tackles the challenge of finding affordable, event-appropriate outfits that match personal style. As young people use fashion for self-expression, many struggle to find trendy, budget-friendly clothes suited to their body type and event needs. Confianza & Vogue solves this by offering a clothing library that recommends outfits based on body type, climate, budget, and event type, empowering teens to confidently build their unique identity while staying updated on trends.',
+                    features: ['Outfit Recommendations', 'Clothing Library', 'List of Stores', 'Blog'],
                     links: {
-                        'Github Link': 'https://github.com/example/confianza'
+                        'Github Link': 'https://github.com/jayannbal/Confianza_Vogue_Website'
                     }
                 },
-                'IT Mobile Prototype 2': {
+                'Hris': {
                     title: 'HR Information System',
-                    image: './cozone-pic.png',
-                    date: 'May 2024 - Sep 2025',
-                    tools: ['Flutter', 'MySQL'],
-                    description: 'A mobile application for employees in a company, enhancing HR management with payroll and leave tracking features.',
-                    features: ['Payroll Tracking', 'Leave Management'],
+                    images: [
+                        './assets/hris.png',
+                        // './assets/hris1.png',
+                        // './assets/hris2.png',
+                        // './assets/hris3.png'
+                    ],
+                    date: 'Feb 2025 - May 2025',
+                    tools: ['Version Control: Andoid Studio', 'Programming Language: Java, XML','Backend: Node.js', 'Database: MySQL', 'Design: Figma'],
+                    description: 'HRIS is an android mobile application streamlined solution for company employees to handle time-in/time-out, leave requests, overtime, offsets, payroll, and view company announcements seamlessly on their mobile devices. This project, developed with my fellow interns, for the company’s workforce, enhances accessibility and productivity while keeping employees informed.',
+                    features: ['Employee: Track time-in/time-out, submit leave/overtime requests, manage offsets, access payroll, and view company announcements. ', 'Admins: Approve/reject leave and overtime requests, monitor employee time logs, manage payroll data, post company announcements, and access workforce analytics.'],
                     links: {
                         'Github Link': 'https://github.com/example/hrsystem'
                     }
                 },
-                'EDU BRIGHT 2': {
+                'Todomoa': {
                     title: 'TODO: MOA',
-                    image: './cozone-pic.png',
-                    date: 'Jun 2024 - Oct 2025',
-                    tools: ['Swift', 'Core Data'],
-                    description: 'TODO: MOA is a mobile application prototype for task management and productivity, designed for personal organization.',
-                    features: ['Task Scheduling', 'Reminders'],
+                    images: [
+                        './assets/todo1.jpg',
+                        './assets/todo2.jpg',
+                        './assets/todo3.jpg',
+                        './assets/todo4.jpg',
+                        './assets/todo5.jpg',
+                        './assets/todo6.jpg',
+                        './assets/todo7.jpg',
+                        './assets/todo8.jpg',
+                    ],
+                    date: 'July 2023',
+                    tools: ['Figma'],
+                    description: 'TODO: MOA is a mobile application prototype design for MOA which stands for Moments Of Alwayness, a fandom name for the Kpop group called Tomorrow by Together (TXT). It serves as comprehensive platform where fans can effortlessly organize, list, and receive reminders for all things related to TXT. This app aims to help MOAs in supporting the group while effectively balancing their personal lives.',
+                    features: ['Create and manage to-do lists for TXT events, music releases, and fan activities.', 'Set personalized reminders for schedules and deadlines.'],
                     links: {
-                        'Github Link': 'https://github.com/example/todomoa'
+                        'Github Link': 'https://www.figma.com/proto/HCSOuL1rRRpDbCJnAc4I3v/TO-DO-MOA?node-id=6-92&p=f&t=MIGY5zoiiX2O4apr-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=6%3A92'
+                    }
+                },
+                'Dew it': {
+                    title: 'Dew It',
+                    images: [
+                        './assets/dewit1.jpg',
+                        './assets/dewit2.jpg',
+                        './assets/dewit3.jpg',
+                        './assets/dewit4.jpg',
+                        './assets/dewit5.jpg',
+                        './assets/dewit6.jpg',
+                    ],
+                    date: 'March 2025',
+                    tools: ['Version Control: Andoid Studio', 'Programming Language: Java, XML','Backend: Node.js', 'Design: Figma'],
+                    description: 'Dew It is a mobile to-do list application that help users stay organized and manage tasks efficiently. It offers a simple platform where users can create and categorize to-do lists, check off completed tasks, and delete tasks as needed. ',
+                    features: ['User authentication', 'Add, check, delete list', 'Add, check, delete categories'],
+                    links: {
+                        'Github Link': 'https://www.figma.com/proto/HCSOuL1rRRpDbCJnAc4I3v/TO-DO-MOA?node-id=6-92&p=f&t=MIGY5zoiiX2O4apr-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=6%3A92'
+                    }
+                },
+                'Create Account': {
+                    title: 'User Authentication',
+                    images: [
+                        './assets/createacc1.jpg',
+                        './assets/createacc2.jpg',
+                        './assets/createacc3.jpg',
+                        './assets/createacc4.jpg',
+                        './assets/createacc5.jpg',
+                        './assets/createacc6.jpg',
+                    ],
+                    date: 'February 2025',
+                    tools: ['Version Control: Android Studio','Programming Language: Java, XML','Design: Figma'],
+                    description: 'Developed as my first project using Android Studio, the User Authentication Mobile App is a sleek and functional application designed to handle user account management with ease.',
+                    features: ['Sign up', 'Log in', 'Forgot Password', 'Change Password'],
+                    links: {
+                        'Github Link': 'https://www.figma.com/proto/HCSOuL1rRRpDbCJnAc4I3v/TO-DO-MOA?node-id=6-92&p=f&t=MIGY5zoiiX2O4apr-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=6%3A92'
+                    }
+                },
+                'ERS': {
+                    title: 'Employee Record System',
+                    images: [
+                        './assets/employee-img.png'
+                    ],
+                    date: '2023',
+                    tools: ['Version Control: VS Code','Programming Language: Python', 'Database: MySQL'],
+                    description: 'The Employee Record System is a web-based application system, developed by a team of two, developed to streamline employee data management for organizations.  This system solves provides a centralized platform to store, update, and retrieve employee records securely and efficiently. ',
+                    features: ['Employees: View personal records and request updates', 'Admin/HR: Add, edit, and delete employee records'],
+                    links: {
+                        'Github Link': 'https://github.com/jayannbal/Employee-Record-System-Database'
+                    }
+                },
+                'Habiti': {
+                    title: 'Habiti',
+                    images: [
+                        './assets/habiti.png'
+                    ],
+                    date: 'June 2023',
+                    tools: ['Adobe Illustrator'],
+                    description: 'Habiti is a mobile application prototype design for habit tracker ',
+                    features: ['Employees: View personal records and request updates', 'Admin/HR: Add, edit, and delete employee records'],
+                    links: {
+                        'Github Link': 'https://github.com/jayannbal/Employee-Record-System-Database'
+                    }
+                },
+                'Stickman': {
+                    title: 'Stickman Animation',
+                    images: [
+                        './assets/stickman.png'
+                    ],
+                    date: 'June 2023',
+                    tools: ['Adobe Animate'],
+                    description: 'A simple animation of a stickman shooting the ball on a basketball ring.',
+                    features: ['None'],
+                    links: {
+                        'Github Link': 'https://github.com/jayannbal/Employee-Record-System-Database'
+                    }
+                },
+                'ATM': {
+                    title: 'ATM Simulation',
+                    images: [
+                        './assets/atm1.png',
+                        './assets/atm2.png',
+                        './assets/atm3.png',
+                        './assets/atm4.png',
+                        './assets/atm5.png',
+                        './assets/atm6.png',
+                        './assets/atm7.png',
+                        './assets/atm8.png'
+                    ],
+                    date: 'November 2022',
+                    tools: ['C++','Flash Drive'],
+                    description: 'ATM Simulation, developed by a team of two, is a registration and transaction module that mimics a real ATM system, using a flash drive as a simulated ATM card.',
+                    features: ['Registration', 'Transaction (deposit, withdraw, check balance)'],
+                    links: {
+                        'Github Link': 'https://github.com/jayannbal/ATM-Simulation'
                     }
                 }
-                // Add more projects (e.g., To Dew, ERS, Habiti, etc.) as needed
             };
 
             const project = projects[projectTitle];
             if (project) {
                 const contentDiv = document.getElementById('project-content');
+                let carouselItems = '';
+                project.images.forEach((image, index) => {
+                    carouselItems += `
+                        <div class="carousel-item${index === 0 ? ' active' : ''}">
+                            <img src="${image}" class="d-block w-100" alt="${project.title} Slide ${index + 1}">
+                        </div>
+                    `;
+                });
+
                 let html = `
                     <div class="text-content">
                         <h1 style="color: #E69DB8; font-size: 3em;">${project.title}</h1>
@@ -151,10 +294,7 @@
                     </div>
                     <div id="starryCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="${project.image}" class="d-block w-100" alt="${project.title} Slide 1">
-                            </div>
-                            <!-- Add more carousel items if needed (e.g., additional images) -->
+                            ${carouselItems}
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#starryCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
