@@ -303,7 +303,7 @@ body {
 .nav-tabs .nav-link {
     color: #000;
     background-color: transparent;
-    border: 1px solid #E69DB8 ; 
+    border: 1px solid #E69DB8; 
     border-bottom: none; 
     margin-right: 10px;
     font-weight: 500;
@@ -312,7 +312,7 @@ body {
 }
 
 .nav-tabs .nav-link:hover {
-    color: #E69DB8 ;
+    color: #E69DB8;
     background-color: #fff5f7; 
     border-color: #E69DB8; 
 }
@@ -333,7 +333,6 @@ body {
     text-align: center;
     padding: 15px;
     height: 100%;
-
 }
 
 .project-card img {
@@ -426,14 +425,8 @@ body {
     object-fit: cover;
 }
 
-/* #starryCarousel {
-    flex: 1;
-    max-width: 50%;
-} */
-
 #starryCarousel .carousel-item img {
     border-radius: 8px;
-    /* height: 400px;  */
     box-shadow: 0 4px 50px rgba(0, 0, 0, 0.2);
     border: 2px solid #E69DB8; 
 }
@@ -442,20 +435,6 @@ body {
 #starryCarousel .carousel-control-next {
     opacity: 1;
 }
-
-/* #starryCarousel .carousel-control-prev-icon,
-#starryCarousel .carousel-control-next-icon {
-    background-color: #E69DB8;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-} */
-/* 
-#starryCarousel .carousel-control-prev:hover .carousel-control-prev-icon,
-#starryCarousel .carousel-control-next:hover .carousel-control-next-icon {
-    background-color: #C5809A;
-    border-radius: 50%;
-} */
 
 .text-content .links .btn {
     background-color: #E69DB8;
@@ -512,17 +491,52 @@ body {
 
 .btn-back:hover {
     background-color: #E69DB8 !important;
-    color: #fff !important;;
+    color: #fff !important;
 }
 
 .btn-back i {
     margin-right: 5px;
 }
 
-
 .btn-see-more:hover, .btn-see-less:hover {
     background-color: #E69DB8 !important;
     color: #fff !important;
+}
+
+/* Responsive Design for 767px and Below */
+@media (max-width: 767px) {
+    .project-content {
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+    .carousel {
+        order: -1; /* Moves carousel above text-content */
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px; /* Add spacing between carousel and text content */
+    }
+
+    .text-content {
+        width: 100%;
+        /* text-align: center; */
+    }
+
+    .carousel img {
+        max-height: 400px; /* Adjust image height for mobile */
+    }
+
+    .text-content h1 {
+        font-size: 2em; /* Reduce title size for mobile */
+    }
+
+    .text-content p {
+        font-size: 1em; /* Slightly smaller paragraph text */
+    }
+
+    .text-content ul li {
+        font-size: 0.9em; /* Slightly smaller list items */
+    }
 }
 
 /* EDUCATION AND EXPERIENCE TIMELINE */

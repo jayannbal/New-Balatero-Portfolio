@@ -177,13 +177,13 @@
                     <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="system-tab" data-bs-toggle="tab" data-bs-target="#system" type="button" role="tab" aria-controls="system" aria-selected="false">System</button>
-                </li>
-                <li class="nav-item" role="presentation">
                     <button class="nav-link" id="website-tab" data-bs-toggle="tab" data-bs-target="#website" type="button" role="tab" aria-controls="website" aria-selected="false">Website</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="game-tab" data-bs-toggle="tab" data-bs-target="#game" type="button" role="tab" aria-controls="game" aria-selected="false">Game</button>
+                    <button class="nav-link" id="mobile-tab" data-bs-toggle="tab" data-bs-target="#mobile" type="button" role="tab" aria-controls="mobile" aria-selected="false">Mobile</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="system-tab" data-bs-toggle="tab" data-bs-target="#system" type="button" role="tab" aria-controls="system" aria-selected="false">System</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="prototype-tab" data-bs-toggle="tab" data-bs-target="#prototype" type="button" role="tab" aria-controls="prototype" aria-selected="false">Prototype</button>
@@ -192,7 +192,7 @@
         </div>
 
         <div class="tab-content" id="projectTabContent">
-            <!-- All Tab -->
+            <!-- All Tab (Unchanged) -->
             <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
                 <div class="row project-cards-container">
                     <div class="col-md-4 mb-4">
@@ -322,54 +322,113 @@
                 </div>
             </div>
 
-            <!-- System Tab -->
-            <div class="tab-pane fade" id="system" role="tabpanel" aria-labelledby="system-tab">
-                <div class="row project-cards-container">
-                    <div class="col-md-4 mb-4">
-                        <div class="card project-card" data-project="IT Mobile Prototype">
-                            <img src="https://via.placeholder.com/300x200?text=IT+Mobile+Prototype" class="card-img-top" alt="IT Mobile Prototype">
-                            <div class="card-body">
-                                <h5 class="card-title">IT Mobile Prototype</h5>
-                                <p class="card-text">Features and Insights</p>
-                                <button type="button" class="btn btn-secondary see-details">See details</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-4">
-                    <button type="button" class="btn btn-see-more" style="background-color: #E69DB8; color: #fff; border: none; padding: 10px 20px; border-radius: 5px;">See more</button>
-                    <button type="button" class="btn btn-see-less" style="background-color: #E69DB8; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; display: none;">See less</button>
-                </div>
-            </div>
-
             <!-- Website Tab -->
             <div class="tab-pane fade" id="website" role="tabpanel" aria-labelledby="website-tab">
                 <div class="row project-cards-container">
                     <div class="col-md-4 mb-4">
-                        <div class="card project-card" data-project="Welcome to Cozone">
-                            <img src="https://via.placeholder.com/300x200?text=Welcome+to+Cozone" class="card-img-top" alt="Cozone">
+                        <div class="card project-card" data-project="Cozone">
+                            <img src="./assets/cozone-pic.png" class="card-img-top" alt="Cozone">
                             <div class="card-body">
-                                <h5 class="card-title">Welcome to Cozone</h5>
-                                <p class="card-text">Features and Analytics Insights</p>
+                                <h5 class="card-title">CoZone</h5>
+                                <p class="card-text">A web-based reservation system.</p>
+                                <button type="button" class="btn btn-secondary see-details">See details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card project-card" data-project="Stbverse">
+                            <img src="./assets/stbverse-img.png" class="card-img-top" alt="STB Verse">
+                            <div class="card-body">
+                                <h5 class="card-title">STB Verse</h5>
+                                <p class="card-text">Website dedicated to our passion for KPOP.</p>
+                                <button type="button" class="btn btn-secondary see-details">See details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card project-card" data-project="Confianza">
+                            <img src="./assets/confianza-img.png" class="card-img-top" alt="Confianza & Vogue">
+                            <div class="card-body">
+                                <h5 class="card-title">Confianza & Vogue</h5>
+                                <p class="card-text">Website that personalizes outfit choices.</p>
                                 <button type="button" class="btn btn-secondary see-details">See details</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="text-center mt-4">
-                    <button type="button" class="btn btn-see-more" style="background-color: #E69DB8; color: #fff; border: none; padding: 10px 20px; border-radius: 5px;">See more</button>
-                    <button type="button" class="btn btn-see-less" style="background-color: #E69DB8; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; display: none;">See less</button>
+                    <button type="button" class="btn btn-see-more" style="background-color: #fff; color: #E69DB8; border: none; padding: 10px 20px; border-radius: 5px;">SEE MORE</button>
+                    <button type="button" class="btn btn-see-less" style="background-color: #fff; color: #E69DB8; border: none; padding: 10px 20px; border-radius: 5px; display: none;">SEE LESS</button>
                 </div>
             </div>
 
-            <!-- Game Tab -->
-            <div class="tab-pane fade" id="game" role="tabpanel" aria-labelledby="game-tab">
+            <!-- Mobile Tab -->
+            <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
                 <div class="row project-cards-container">
-                    <!-- Add game projects here if any -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card project-card" data-project="Hris">
+                            <img src="./assets/hris.png" class="card-img-top" alt="HR Information System">
+                            <div class="card-body">
+                                <h5 class="card-title">HR Information System</h5>
+                                <p class="card-text">Mobile application for employees in company</p>
+                                <button type="button" class="btn btn-secondary see-details">See details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card project-card" data-project="Dew it">
+                            <img src="./assets/dewit.png" class="card-img-top" alt="Dew It">
+                            <div class="card-body">
+                                <h5 class="card-title">Dew It</h5>
+                                <p class="card-text">Todo list mobile application </p>
+                                <button type="button" class="btn btn-secondary see-details">See details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card project-card" data-project="Create Account">
+                            <img src="./assets/createacc.png" class="card-img-top" alt="User Authentication Mobile App">
+                            <div class="card-body">
+                                <h5 class="card-title">User Authentication Mobile App</h5>
+                                <p class="card-text">Simple mobile application project </p>
+                                <button type="button" class="btn btn-secondary see-details">See details</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="text-center mt-4">
-                    <button type="button" class="btn btn-see-more" style="background-color: #E69DB8; color: #fff; border: none; padding: 10px 20px; border-radius: 5px;">SEE</button>
-                    <button type="button" class="btn btn-see-less" style="background-color: #E69DB8; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; display: none;">See less</button>
+                    <button type="button" class="btn btn-see-more" style="background-color: #fff; color: #E69DB8; border: none; padding: 10px 20px; border-radius: 5px;">SEE MORE</button>
+                    <button type="button" class="btn btn-see-less" style="background-color: #fff; color: #E69DB8; border: none; padding: 10px 20px; border-radius: 5px; display: none;">SEE LESS</button>
+                </div>
+            </div>
+
+            <!-- System Tab -->
+            <div class="tab-pane fade" id="system" role="tabpanel" aria-labelledby="system-tab">
+                <div class="row project-cards-container">
+                    <div class="col-md-4 mb-4">
+                        <div class="card project-card" data-project="Edubright">
+                            <img src="./assets/EduBright.png" class="card-img-top" alt="EDU: BRIGHT">
+                            <div class="card-body">
+                                <h5 class="card-title">EDU: BRIGHT</h5>
+                                <p class="card-text">A school management system.</p>
+                                <button type="button" class="btn btn-secondary see-details">See details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card project-card" data-project="ERS">
+                            <img src="./assets/employee-img.png" class="card-img-top" alt="ERS">
+                            <div class="card-body">
+                                <h5 class="card-title">ERS</h5>
+                                <p class="card-text">An employee record system database</p>
+                                <button type="button" class="btn btn-secondary see-details">See details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button type="button" class="btn btn-see-more" style="background-color: #fff; color: #E69DB8; border: none; padding: 10px 20px; border-radius: 5px;">SEE MORE</button>
+                    <button type="button" class="btn btn-see-less" style="background-color: #fff; color: #E69DB8; border: none; padding: 10px 20px; border-radius: 5px; display: none;">SEE LESS</button>
                 </div>
             </div>
 
@@ -377,19 +436,49 @@
             <div class="tab-pane fade" id="prototype" role="tabpanel" aria-labelledby="prototype-tab">
                 <div class="row project-cards-container">
                     <div class="col-md-4 mb-4">
-                        <div class="card project-card" data-project="EDU BRIGHT">
-                            <img src="https://via.placeholder.com/300x200?text=EDU+BRIGHT" class="card-img-top" alt="Edu Bright">
+                        <div class="card project-card" data-project="Todomoa">
+                            <img src="./assets/TodoMoa.png" class="card-img-top" alt="TODO: MOA">
                             <div class="card-body">
-                                <h5 class="card-title">EDU BRIGHT</h5>
-                                <p class="card-text">Features and Insights</p>
+                                <h5 class="card-title">TODO: MOA</h5>
+                                <p class="card-text">Mobile application prototype</p>
+                                <button type="button" class="btn btn-secondary see-details">See details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card project-card" data-project="Habiti">
+                            <img src="./assets/habiti.png" class="card-img-top" alt="Habiti">
+                            <div class="card-body">
+                                <h5 class="card-title">Habiti</h5>
+                                <p class="card-text">Habit tracker mobile application UI.</p>
+                                <button type="button" class="btn btn-secondary see-details">See details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card project-card" data-project="Stickman">
+                            <img src="./assets/stickman.png" class="card-img-top" alt="Stickman Animation">
+                            <div class="card-body">
+                                <h5 class="card-title">Stickman Animation</h5>
+                                <p class="card-text">Simple animation of stickman</p>
+                                <button type="button" class="btn btn-secondary see-details">See details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card project-card" data-project="ATM">
+                            <img src="./assets/atm1.png" class="card-img-top" alt="ATM Simulation">
+                            <div class="card-body">
+                                <h5 class="card-title">ATM Simulation</h5>
+                                <p class="card-text">A registration and transaction module.</p>
                                 <button type="button" class="btn btn-secondary see-details">See details</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="text-center mt-4">
-                    <button type="button" class="btn btn-see-more">SEE MORE</button>
-                    <button type="button" class="btn btn-see-less">SEE LESS</button>
+                    <button type="button" class="btn btn-see-more" style="background-color: #fff; color: #E69DB8; border: none; padding: 10px 20px; border-radius: 5px;">SEE MORE</button>
+                    <button type="button" class="btn btn-see-less" style="background-color: #fff; color: #E69DB8; border: none; padding: 10px 20px; border-radius: 5px; display: none;">SEE LESS</button>
                 </div>
             </div>
         </div>
@@ -440,7 +529,6 @@
         });
     });
 </script>
-
      <!-- EDUCATION AND EXPERIENCE -->
 <div class="container mt-5">
     <!-- <h2 class="text-center mb-5">Education & Experience</h2> -->
@@ -477,7 +565,7 @@
 
         <!-- Experience Timeline (Right) -->
         <div class="col-md-6">
-            <h2 class="text-center mb-4" style="color: #E69DB8;">Experience / Training</h2>
+            <h2 class="text-center mb-4" style="color: #E69DB8;">Experience & Training</h2>
             <ul class="timeline experience-timeline">
                 <li class="event">
                     <h4 class="mb-3">Android Mobile Application Developer</h4>
@@ -493,13 +581,13 @@
                 </li>
                 <li class="event">
                     <h4 class="mb-3">Contact Center Service Training</h4>
-                       <p style="color: #E69DB8;">March 2020</p>
+                       <p style="color: #E69DB8;">MARCH 2020</p>
                     <p>Power Skills Technical Center- Dasmarinas City Cavite</p>
                     <p>I learned about CCS.</p>
                 </li>
                 <li class="event">
                     <h4 class="mb-3">Japanese Learning Proficiency</h4>
-                       <p style="color: #E69DB8;">April 2015</p>
+                       <p style="color: #E69DB8;">APRIL 2015</p>
                     <p>Kamusta Ka Foundation - Dasmarinas City Cavite</p>
                     <p>N4 training.</p>
                 </li>
