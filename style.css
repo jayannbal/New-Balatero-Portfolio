@@ -1,10 +1,12 @@
 html, body {
     height: 100%;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
     position: relative;
+    padding-top: 70px; /* Adjust based on navbar height */
 }
 
 /* Navbar Styling */
@@ -16,12 +18,15 @@ body {
 }
 
 .navbar {
-    box-shadow: 0 4px 10px rgba(230, 157, 184, 0.5); 
+    box-shadow: 0 4px 18px rgba(141, 184, 135, 0.5); 
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000; 
+     background-color: #fff;
+    font-family: Montserrat, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    z-index: 1000; /* Ensure navbar stays above other content */
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -44,9 +49,14 @@ body {
 /* HOME */
 .hero-section {
     position: relative;
-    min-height: 90vh;
+    min-height: 91vh;
     padding: 120px 0 60px; 
     overflow: hidden;
+}
+
+.py-3 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .hero-section::before {
@@ -62,15 +72,15 @@ body {
 
 .hero-title {
     font-size: 2rem;
-    color: #333;
+    color: #97b786;
     margin-bottom: 0;
     font-family: Montserrat, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .hero-name {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #E69DB8;
-    font-weight: bold;
+    font-weight:600;
     margin: 10px 0;
     font-family: Montserrat, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -85,6 +95,7 @@ body {
 .hero-socials {
     margin-top: 50px;
     margin-bottom: 20px;
+    margin-left: -10px;
 }
 
 .social-icon {
@@ -95,7 +106,7 @@ body {
 }
 
 .social-icon:hover {
-    color: #c5809a;
+    color: #97b786; 
 }
 
 .btn-custom {
@@ -107,7 +118,12 @@ body {
 }
 
 .btn-custom:hover {
-    background-color: #c5809a;
+    background-color: #97b786;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #97b786;
     color: #fff;
 }
 
@@ -148,6 +164,11 @@ body {
     font-family: Montserrat, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+#home .btn:hover {
+    background-color: #97b786;
+    color: #fff;
+}
+
 /* Responsive */
 @media (min-width: 768px) {
     .hero-section .row {
@@ -159,6 +180,7 @@ body {
     }
     .image-wrapper {
         left: -33.33%; 
+        margin-right: 100px;
     }
 }
 
@@ -181,10 +203,18 @@ body {
 .about-section {
     margin-top: 100px;
     margin-right: 50px;
+    margin-left: 50px;
 }
 
 .col-md .h2 {
     font-family: Montserrat, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 767px) {
+    .col-md .h2 {
+        text-align: center !important;
+    }
 }
 
 /* SKILLS SECTION */
@@ -244,7 +274,7 @@ body {
 }
 
 .progress-bar.bg-primary {
-    background-color: #E69DB8 !important; 
+    background-color: #97b786 !important; 
 }
 
 .progress-bar.bg-info {
@@ -313,7 +343,7 @@ body {
 
 .nav-tabs .nav-link:hover {
     color: #E69DB8;
-    background-color: #fff5f7; 
+    background-color: #fff; 
     border-color: #E69DB8; 
 }
 
@@ -339,6 +369,7 @@ body {
     border-radius: 8px;
     object-fit: cover;
     height: 200px;
+    box-shadow: 0 4px 8px rgba(69, 30, 44, 0.3) !important; 
 }
 
 .project-card .card-body {
@@ -366,6 +397,11 @@ body {
 .card-body .btn {
     background-color: #E69DB8;
     border: none;
+}
+
+.card-body .btn:hover {
+    background-color: #97b786; 
+    color: #fff;
 }
 
 .project-details {
@@ -427,13 +463,36 @@ body {
 
 #starryCarousel .carousel-item img {
     border-radius: 8px;
-    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 50px rgba(74, 35, 35, 0.738) !important;
     border: 2px solid #E69DB8; 
 }
+
+/* #starryCarousel .carousel-control-prev-icon::before,
+#starryCarousel .carousel-control-next-icon::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: solid #000; 
+    border-width: 3px 0 0 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(135deg); 
+} */
 
 #starryCarousel .carousel-control-prev,
 #starryCarousel .carousel-control-next {
     opacity: 1;
+    color: #000 !important;
+}
+#starryCarousel .carousel-control-prev-icon::before {
+    transform: translate(-50%, -50%) rotate(-45deg); /* Left arrow for prev */
+}
+
+#starryCarousel .carousel-control-prev:hover,
+#starryCarousel .carousel-control-next:hover {
+    background-color: rgba(117, 65, 84, 0.2); /* Light pink background on hover */
 }
 
 .text-content .links .btn {
@@ -711,7 +770,7 @@ body {
 }
 
 .contact-section .btn-secondary:hover {
-    background-color: #c5809a; 
+    background-color: #97b786;
 }
 
 .contact-section #msg {
@@ -737,6 +796,10 @@ body {
 }
 
 .social-icons a:hover {
-    color: #e8427f;
+    color: #97b786;
 }
 
+.btn:hover {
+    background-color: #97b786 !important;
+    color: #fff !important;
+}
